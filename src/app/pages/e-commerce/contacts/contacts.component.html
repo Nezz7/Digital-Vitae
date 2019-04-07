@@ -1,0 +1,25 @@
+<nb-card [size]="breakpoint.width >= breakpoints.xxxl || breakpoint.width < breakpoints.md ? 'large' : 'large'">
+  <nb-tabset fullWidth>
+    <nb-tab tabTitle="Genereal Information" text-align="center"    >
+      <div class="contact" *ngFor="let c of contacts">
+        <nb-user [picture]="c.user.picture" [name]="c.user.name"  size="large"></nb-user>
+      </div>
+      <div  class ="contact simple">
+        Age       : 22
+      </div>
+      <div class="contact simple">
+       Gender     : male 
+      </div>
+      <div class="contact simple">
+        Birthday  : 02/03/1997 
+      </div>
+      <div class="contact simple">
+        Weight  : 65 kg
+      </div>
+      <div class="contact simple">
+        Tall    : 168 cm
+      </div>
+    </nb-tab>
+   
+  </nb-tabset>
+</nb-card>
