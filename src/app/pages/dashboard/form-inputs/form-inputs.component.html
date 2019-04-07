@@ -1,0 +1,33 @@
+<div class="row">
+    <nb-card>
+        <nb-card-header>Medical Examination Record</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputFirstName">Weight</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="Weight">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="inputLastName">Blood Pressure</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Blood Pressure">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="form-control-label">Notes Auscultation</label>
+                        <input class="form-control" [(ngModel)]="title" name="title">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Notes Palpation</label>
+                        <input class="form-control" [(ngModel)]="title" name="title">
+                    </div>
+                </div>
+            </div>
+        </nb-card-body>
+    </nb-card>
+</div>

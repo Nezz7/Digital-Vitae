@@ -4,17 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { BootstrapComponent } from './bootstrap.component';
 import { ModalsComponent } from './modals/modals.component';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { FormInputsComponent } from './form-inputs/form-inputs.component';
 
 
 const routes: Routes = [{
   path: '',
   component: BootstrapComponent,
   children: [
-    {
-      path: 'inputs',
-      component: FormInputsComponent,
-    },
     {
       path: 'buttons',
       component: ButtonsComponent,
